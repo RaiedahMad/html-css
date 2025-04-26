@@ -1,0 +1,483 @@
+:root {
+  --nav-bg: #1d1d1f;
+  --nav-color: #8b8b8b;
+  --nav-font-weight: 400;
+  --nav-font: 12px;
+}
+
+@font-face {
+  font-family: "roman";
+  src: url("assets/fonts/HelveticaNeueRoman.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("assets/fonts/HelveticaNeueBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "medium";
+  src: url("assets/fonts/HelveticaNeueMedium.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "thin";
+  src: url("assets/fonts/HelveticaNeueThin.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "normal";
+  src: url("assets/fonts/HelveticaNeueRoman.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--nav-bg);
+  padding: 12px 0px;
+}
+i {
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  font-family: "roman";
+  font-size: var(--nav-font);
+  font-weight: var(--nav-font-weight);
+}
+nav i {
+  font-size: 18px;
+  margin: 0px 12px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--nav-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav span {
+  display: flex;
+}
+nav a:hover {
+  color: #007bff;
+}
+.ri-menu-line {
+  display: none;
+}
+/* Responsive Design */
+@media (max-width: 830px) {
+  nav {
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+  nav ul {
+    display: none;
+  }
+  .nav ul li {
+    display: none;
+  }
+  .ri-menu-line {
+    display: block;
+  }
+}
+/* Main Content */
+:root {
+  --herocolor: #1d1d1f;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero-section */
+.hero {
+  background-image: url(assets/img/iphone2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.hero-container {
+  padding-top: 20px;
+}
+.hero-container h1 {
+  color: var(--herocolor);
+  font-family: medium;
+  font-size: 1.5em;
+}
+.hero-container h3 {
+  color: var(--herocolor);
+  font-family: normal;
+  margin: 5px 0px;
+  font-size: 2rem;
+}
+.hero-container h4 {
+  font-size: 20px;
+  font-family: normal;
+  margin: 20px 0px;
+  background: linear-gradient(to right, rgb(117, 117, 197), purple, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-btn-1 {
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-family: thin;
+  font-size: 20px;
+  margin-right: 15px;
+  font-family: normal;
+}
+
+.hero-btn-2 {
+  outline: none;
+  border: 1px solid #007bff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: #007bff;
+  font-family: thin;
+  font-size: 20px;
+  font-family: normal;
+}
+.hero-btn-2:hover {
+  border: none;
+  background-color: #007bff;
+  color: white;
+}
+.content {
+  padding: 2rem 0;
+}
+
+.content h2 {
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+/* Responsive Design */
+@media (max-width: 830px) {
+  .hero {
+    background-image: url(assets/img/herobg2.jpg);
+  }
+  .hero-container h1 {
+    font-size: 1.5rem;
+  }
+  .hero-container h3 {
+    font-size: 1.2rem;
+  }
+  .hero-container h4 {
+    font-size: 1rem;
+  }
+  .hero-btn-1 {
+    padding: 7px 7px;
+  }
+  .hero-btn-2 {
+    padding: 7px 7px;
+  }
+}
+
+/* Product-section */
+
+.product {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+.product-container {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  padding: 0px 10px;
+  margin: 10px 0;
+}
+.product-1,
+.product-2,
+.product-3,
+.product-4,
+.product-5,
+.product-6 {
+  width: 50%;
+  height: 600px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  margin-bottom: 10px;
+}
+
+.product-1 {
+  background-image: url(assets/img/iphone3.jpg);
+}
+
+.product-2 {
+  background-image: url(assets/img/iphone4.jpg);
+}
+
+.product-3 {
+  background-image: url(assets/img/iphone5.jpg);
+}
+
+.product-4 {
+  background-image: url(assets/img/iphone6.jpg);
+}
+
+.product-5 {
+  background-image: url(assets/img/iphone7.jpg);
+}
+
+.product-6 {
+  background-image: url(assets/img/iphone8.jpg);
+}
+
+.product-1 img {
+  height: 25px;
+  margin-bottom: 15px;
+}
+.product-1 h2 {
+  font-size: 1rem;
+  font-family: normal;
+  margin-bottom: 15px;
+}
+.product-2 h2 {
+  font-size: 2rem;
+  font-family: normal;
+  margin-bottom: 10px;
+}
+.product-2,
+.product-6 {
+  padding-top: 420px;
+}
+
+.product-2 h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: thin;
+  text-align: center;
+}
+.product-3 h2 {
+  font-size: 2rem;
+  font-family: medium;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.product-3 h3 {
+  font-size: 1.5rem;
+  font-family: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product .hero-btn-1 {
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.hero-btn-2 {
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.product-4 h2 {
+  font-size: 2rem;
+  font-family: medium;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.product-4 h2 span {
+  background: #00ff00;
+}
+
+.product-4 h3 {
+  font-size: 1.4rem;
+  font-family: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-5 img {
+  height: 35px;
+  margin-bottom: 7px;
+}
+.product-5 h2 {
+  font-size: 1.3rem;
+  font-family: normal;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.product-6 h2 {
+  font-size: 2rem;
+  font-family: medium;
+  margin-bottom: 10px;
+  color: white;
+}
+.product-6 h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: normal;
+  text-align: center;
+  color: white;
+}
+.product-6 .btn {
+  display: flex;
+}
+/* Responsive Design */
+@media (max-width: 730px) {
+  .product-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-2,
+  .product-6 {
+    padding-top: 320px;
+  }
+
+  .product-1,
+  .product-2,
+  .product-3,
+  .product-4,
+  .product-5,
+  .product-6 {
+    width: 100%;
+    height: 500px;
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .product-1 img,
+  .product-5 img {
+    height: 25px;
+    margin-bottom: 15px;
+  }
+
+  .product-1 h2,
+  .product-2 h2,
+  .product-3 h2,
+  .product-4 h2,
+  .product-5 h2,
+  .product-6 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .product-1 h3,
+  .product-2 h3,
+  .product-3 h3,
+  .product-4 h3,
+  .product-5 h3,
+  .product-6 h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .hero-btn-1,
+  .hero-btn-2 {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-1,
+  .product-2,
+  .product-3,
+  .product-4,
+  .product-5,
+  .product-6 {
+    height: 450px;
+    padding-top: 20px;
+  }
+
+  .product-2,
+  .product-6 {
+    padding-top: 320px;
+  }
+}
+
+/* Fix for navigation on mobile */
+@media (max-width: 830px) {
+  nav {
+    justify-content: space-between;
+    padding: 0px 15px;
+  }
+
+  nav span {
+    gap: 10px;
+  }
+
+  .product-2,
+  .product-6 {
+    padding-top: 320px;
+  }
+  nav i {
+    font-size: 16px;
+    margin: 0px 5px;
+  }
+}
+
+/* Fix for product container spacing */
+.product-container {
+  margin-bottom: 10px;
+}
+
+/* Fix for button spacing */
+.hero-btn-1,
+.hero-btn-2 {
+  margin: 5px;
+  white-space: nowrap;
+}
